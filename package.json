@@ -1,0 +1,19 @@
+{
+  "name": "cors-proxy",
+  "version": "1.0.0",
+  "description": "Proxy server that forwards every request to localhost:3000 bypassing CORS restrictions",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/server.js",
+    "dev": "ts-node src/server.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
